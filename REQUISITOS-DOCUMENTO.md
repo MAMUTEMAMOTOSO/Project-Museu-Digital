@@ -6,7 +6,7 @@ Importante: requisito que impacta na experiência, mas não impede o funcionamen
 
 Desejável: requisito opcional que pode ser implementado futuramente.
 
-REQUISITOS FUNCIONAIS
+REQUISITOS FUNCIONAIS:
 
 [RF001] - Exibir barra de pesquisa para buscar projetos por nome, categoria ou ano.
 Ator: Usuário
@@ -28,7 +28,7 @@ Prioridade: Desejável
 Ator: Usuário
 Prioridade: Importante
 
-REQUISITOS NÃO FUNCIONAIS
+REQUISITOS NÃO FUNCIONAIS:
 
 [NF001] Usabilidade: A interface deve ser simples, com botões claros e lista acessível.
 
@@ -40,7 +40,7 @@ REQUISITOS NÃO FUNCIONAIS
 
 [NF005] Compatibilidade: O sistema deve funcionar em navegadores modernos.
 
-Especificação de Requisitos do Sistema
+Especificação de Requisitos do Sistema:
 
 Exemplo: O sistema deve permitir que o usuário selecione um projeto da lista e visualize seus detalhes (nome, ano e descrição).
 
