@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu Fucapi</title>
+  <style>
+    /* === ESTILOS GERAIS === */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f6f9fc;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* === TÍTULO E DESCRIÇÃO === */
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0a3d62;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    /* === BARRA DE BUSCA === */
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .search-bar input[type="text"] {
+      width: 60%;
+      padding: 12px 20px;
+      border: 2px solid #ccc;
+      border-radius: 25px 0 0 25px;
+      font-size: 16px;
+    }
+
+    .search-bar button {
+      padding: 12px 20px;
+      background: #00a8ff;
+      color: white;
+      border: none;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* === FILTROS === */
+    .filters {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .filters button {
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background-color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .filters .active {
+      background-color: #00a8ff;
+      color: white;
+      border-color: #00a8ff;
+    }
+
+    /* === CARDS DE PROJETOS === */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .card-year {
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="title">Museu Fucapi</div>
+    <div class="description">Esse é um projeto dedicado a homenagear toda a história da feira tecnológica da Fucapi.</div>
+
+    <!-- BARRA DE PESQUISA -->
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar projetos por nome, categoria ou ano...">
+      <button>🔍</button>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="filters">
+      <button class="active">Todos</button>
+      <button>Ciência</button>
+      <button>História</button>
+      <button>Tecnologia</button>
+      <button>Ano</button>
+    </div>
+
+    <!-- CARDS DE PROJETOS -->
+    <div class="projects">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Da_Vinci%27s_Last_Supper_-_high_resolution.jpg/640px-Da_Vinci%27s_Last_Supper_-_high_resolution.jpg" alt="Projeto 1">
+        <div class="card-content">
+          <a href="Pesquisa2024.html" class="card-title">Feira Tecnológica 2024</a>
+        </div>
+      </div>
+
+      <!-- Projeto2 -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Luxor_Temple_Courtyard.jpg/640px-Luxor_Temple_Courtyard.jpg" alt="Projeto 2">
+        <div class="card-content">
+          <div class="card-title">Feira Tecnologica 2023</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sphinx_of_Giza_-_front_view.jpg/640px-Sphinx_of_Giza_-_front_view.jpg" alt="Projeto 3">
+        <div class="card-content">
+          <div class="card-title">Feira Tecnologica 2022</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/An_Apple_Lisa_personal_computer.jpg/640px-An_Apple_Lisa_personal_computer.jpg" alt="Projeto 4">
+        <div class="card-content">
+          <div class="card-title">Feira Tecnologica 2018</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
